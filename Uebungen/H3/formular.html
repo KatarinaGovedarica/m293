@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="formular.css">
+    </head>
+    <body>
+        <form action="" method="" autocomplete="">
+            <fieldset>
+                <legend>Umfrage:</legend>
+            Welches ist ihr aktuelles Lieblingsspiel?<br />
+            <input type="radio" name="game" value="Splatoon 3" /> Splatoon 3<br />
+            <input type="radio" name="game" value="Fortnite" /> Fortnite<br />
+            <input type="radio" name="game" value="COD" />Call Of Duty<br />
+            <input type="radio" name="game" value="LOL" />League Of Legends<br />
+            <input type="radio" name="game" value="GTA" />GTA<br />
+            <input type="radio" name="game" value="JJ" />Jetpack Joyride<br />
+            <input type="radio" name="game" value="MK8D" />Mario Kart 8 Deluxe<br />
+            <input type="radio" name="game" value="MC" />Minecraft<br />
+            <input type="radio" name="game" value="n/a" />Ich spiele keine Spiele.<br />
+            <label for="andere">Andere: </label><br/>
+            <textarea name="andere" placeholder="Schreiben sie hier"></textarea>
+            <br />
+            Welche der folgenden Spiele spielen sie regelmässig?<br />
+            <input type="checkbox" name="game" value="Splatoon 3" /> Splatoon 3<br />
+            <input type="checkbox" name="game" value="Fortnite" /> Fortnite<br />
+            <input type="checkbox" name="game" value="COD" />Call Of Duty<br />
+            <input type="checkbox" name="game" value="LOL" />League Of Legends<br />
+            <input type="checkbox" name="game" value="GTA" />GTA<br />
+            <input type="checkbox" name="game" value="JJ" />Jetpack Joyride<br />
+            <input type="checkbox" name="game" value="MK8D" />Mario Kart 8 Deluxe<br />
+            <input type="checkbox" name="game" value="MC" />Minecraft<br />
+            <input type="checkbox" name="game" value="n/a" />Ich spiele keine Spiele.<br />
+            <label for="andere">Andere: </label><br/>
+            <textarea name="andere" placeholder="Schreiben sie hier"></textarea>
+            <br />
+            <label for="games">Select: </label><br/>
+            <select name="games" id="games">
+                <optgroup label="Combat">
+                  <option value="Splatoon 3" > Splatoon 3<br /></option>
+                  <option value="Fortnite" > Fortnite<br />
+                    <option value="COD" >Call Of Duty<br />
+                        <option value="LOL" >League Of Legends<br />
+                </optgroup>
+                <optgroup label="Open World">
+                  <option value="MC" >Minecraft<br /></option>
+                  <option value="GTA">GTA<br /></option>
+                </optgroup>
+                <optgroup label="Others">
+                    <option value="JJ" >Jetpack Joyride<br /><br /></option>
+                    <option value="MK8D" >Mario Kart 8 Deluxe<br /><br /></option>
+                  </optgroup>
+              </select>
+              <br />
+              <br />
+            <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <br />
+
+        <form method="post" enctype="multipart/form-data">
+            Datei
+            <input type="file" name="file" 
+                accept="image/*,video/*"
+                multiple
+                required
+            />
+            <input type="submit" name="submit" value="Abschicken" />
+        </form>
+        
+    </body>
+</html>
